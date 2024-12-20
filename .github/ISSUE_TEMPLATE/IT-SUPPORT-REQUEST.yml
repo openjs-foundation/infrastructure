@@ -1,6 +1,5 @@
 name: IT Support Request
 description: File a request for OpenJS IT Support.
-title: "[IT Support Request]: "
 labels: ["Triage"]
 projects: ["openjs-foundation/10"]
 body:
