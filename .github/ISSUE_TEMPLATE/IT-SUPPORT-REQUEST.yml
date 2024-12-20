@@ -1,0 +1,43 @@
+name: IT Support Request
+description: File a request for OpenJS IT Support.
+title: "[IT Support Request]: "
+labels: ["Triage"]
+projects: ["openjs-foundation/10"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this form to request suport from the OpenJS IT Team. 
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: What OpenJS project is this for?
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How urgent is this request?
+      multiple: true
+      options:
+        - Critical / Things Are Broken
+        - Medium / Things Are Working But Issue Should Be Resolved Soon
+        - Deadline Based / There Is A Date When This Needs To Be Completed (Specify Date In Description)       
+        - Request / No Problem But Require Assistance or Support
+    validations:
+      required: true        
