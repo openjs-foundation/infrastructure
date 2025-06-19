@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please use this form to request suport from the OpenJS IT Team. 
+        Please use this form to request support from the OpenJS IT Team. 
   - type: input
     id: contact
     attributes:
